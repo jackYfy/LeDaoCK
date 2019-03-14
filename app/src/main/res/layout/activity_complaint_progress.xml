@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context="com.zk.taxi.ui.SettingUI.ComplaintProgressActivity">
+    <include layout="@layout/tool_bar"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/complaint_srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlPrimaryColor="@color/light_blue"
+            app:srlAccentColor="@android:color/white"
+            app:srlDrawableProgress="@drawable/animation_loading_frame"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/complaint_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:background="#fff" />
+        <com.scwang.smartrefresh.layout.footer.BallPulseFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="Scale"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="出租车"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@mipmap/timeimg"
+                android:drawablePadding="10dp"
+                android:text="2017-11-12 10:20"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:drawableLeft="@mipmap/st_img"
+                android:drawablePadding="10dp"
+                android:text="佛山市中山公园"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:drawableLeft="@mipmap/ed_img"
+                android:drawablePadding="10dp"
+                android:text="广州南站"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/often"
+    android:layout_marginLeft="10dp"
+    android:gravity="center_horizontal"
+    android:layout_marginRight="10dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="亲，你的投诉我们将在2小时之内为你处理，"
+        android:textSize="16sp"
+        android:textColor="@color/poi_button_text_color"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请您耐心等候"
+        android:textSize="16sp"
+        android:textColor="@color/poi_button_text_color"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/chuli"
+        android:layout_marginTop="10dp"/>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="20dp">
+          <android.support.v7.widget.AppCompatTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="投诉已用时"
+              android:textColor="@color/poi_button_text_color"/>
+          <android.support.v7.widget.AppCompatTextView
+              android:id="@+id/countdown"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="00:00"
+              android:layout_marginLeft="10dp"
+              android:textColor="@color/account_agree"
+              android:textSize="18sp"/>
+          </LinearLayout>
+    </LinearLayout>-->
+</LinearLayout>

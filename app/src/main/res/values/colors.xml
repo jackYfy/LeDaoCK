@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF444444</color>
+    <color name="colorPrimaryDark">#FF444444</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="loading_text">#000000</color>
+    <color name="loading_bg">#615f5f</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="light_blue">#1493FA</color>
+    <color name="light_gray">#EEEEEE</color>
+    <color name="deep_gray">#333333</color>
+    <color name="side_line">#D1D1D1</color>
+    <color name="background">@color/light_gray</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#125AC6</color>
+    <color name="yellow">#fffc00</color>
+    <color name="text_color">#388E8E</color>
+    <color name="top_color">#f7614d</color>
+    <color name="color_dialog_gray">#ededf3</color>
+    <color name="transparent">#00000000</color>
+    <color name="green">#5ebf85</color>
+    <color name="green1">#3ed77e</color>
+    <color name="menu_bg">#100b22</color>
+    <color name="red">#c8181f</color>
+
+    <color name="news_color1">#FF010000</color>
+    <!-- 按钮文字颜色 -->
+    <color name="poi_button_text_color">#FF969696</color>
+    <color name="gsjtsj_title_color">#FF444444</color>
+    <color name="news_content_color">#FF212121</color>
+    <color name="ababab">#FFababab</color>
+    <color name="poi_search_his_bg">#fbfbfb</color>
+    <color name="background_bg">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="green_text">#ff4aa519</color>
+    <color name="dialog_bg">#8ECB54</color>
+
+    <color name="no1_orange">#fe7d44</color>
+    <color name="route_input_color">#e6e5e5</color>
+    <color name="radio_text_color">#FFE76A54</color>
+    <color name="bus_rout">#d9e5ea</color>
+    <color name="bus_rout1">#64a4ed</color>
+    <color name="weather_bg">#64a4ed</color>
+    <color name="bt_round">#2cf9e1</color>
+    <color name="account_agree">#02c18d</color>
+    <color name="green2">#12d8ce</color>
+
+</resources>

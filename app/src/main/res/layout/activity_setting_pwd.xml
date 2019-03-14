@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.zk.taxi.ui.LoginAccountActivity">
+    <LinearLayout
+        android:id="@+id/set_back"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:orientation="horizontal">
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:background="@mipmap/backpage_black"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        >
+<android.support.v7.widget.AppCompatImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/password"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="设置登录密码"
+            android:textColor="@color/deep_gray"
+            android:textSize="24sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal" >
+
+
+            <EditText
+                android:id="@+id/et_passwd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="1"
+                android:ems="16"
+                android:hint="请输入8到16位密码"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/ababab"
+                android:textCursorDrawable="@null"
+                android:maxLines="1"
+                android:minEms="6"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_showPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+            <TextView
+                android:id="@+id/login_forget_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请设置8-16位密码，必须包含“数字、字母、符号”其中2中，不能包含手机号、空格"
+                android:textColor="@color/poi_button_text_color"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/set_password_next"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/btn_round"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="确定"
+            android:layout_marginTop="80dp"/>
+    </LinearLayout>
+</LinearLayout>

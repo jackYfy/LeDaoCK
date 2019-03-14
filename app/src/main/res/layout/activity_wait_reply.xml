@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:id="@+id/wait_linearlayout"
+    tools:context="com.zk.taxi.ui.CallCar.WaitReplyActivity">
+
+    <include layout="@layout/tool_bar"/>
+    <!--地图布局-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.amap.api.maps.MapView
+                android:id="@+id/reply_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:enabled="true">
+            </com.amap.api.maps.MapView>
+            <!--顶部地址时间布局-->
+            <LinearLayout
+                android:id="@+id/reply_center1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    >
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/ymd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:text="2017-12-5"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/week_eeee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="周三"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/hm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="10:36"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        >
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@mipmap/st_img"/>
+
+                        <View
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/line"
+                            android:layerType="software"/>
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="@mipmap/ed_img"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/get_taxi_site"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="南方消防电力大厦sssssssssddddd"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/get_taxi_offsite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="南方消防电力大厦sssssssssssssssssss"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+          <!--  &lt;!&ndash;确认屏幕中心点&ndash;&gt;
+            <LinearLayout
+                android:id="@+id/main_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"/>
+            &lt;!&ndash;地图中间车辆数及等待时间布局&ndash;&gt;
+            <LinearLayout
+                android:id="@+id/reply_center1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_above="@id/main_center"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_adrift"/>
+            </LinearLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/bottom_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimary">
+                <com.zk.taxi.view.SlideRightViewDragHelper
+                    android:id="@+id/get_order_drag_helper"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/wait_move"
+                            android:clickable="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/move_right"
+                            android:layout_marginLeft="10dp"/>
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="取消订单"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+                </com.zk.taxi.view.SlideRightViewDragHelper>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+
+
+</LinearLayout>

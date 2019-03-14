@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">乐道</string>
+    <string name="navigation_drawer_open">打开</string>
+    <string name="navigation_drawer_close">关闭</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cb_1">行程有变，暂时不需要用车</string>
+    <string name="cb_2">赶时间，换用其他交通工具</string>
+    <string name="cb_3">平台派单太远</string>
+    <string name="cb_4">司机以各种原因不来接我</string>
+    <string name="cb_5">联系不上司机</string>
+    <string name="cb_6">司机要求加价</string>
+    <string name="cb_7">司机找不到上车地点</string>
+    <string name="ct_1">服务态度恶劣</string>
+    <string name="ct_2">迟到</string>
+    <string name="ct_3">故意绕路</string>
+    <string name="ct_4">未上车收费</string>
+    <string name="ct_5">多收附加费</string>
+    <string name="ct_6">其他</string>
+
+</resources>

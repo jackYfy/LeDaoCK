@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp">
+
+               <android.support.v7.widget.AppCompatTextView
+                   android:id="@+id/kmcost"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="里程费"
+                   android:textSize="14sp"
+                   android:textColor="@color/colorPrimary"
+                   android:layout_alignParentLeft="true"/>
+               <android.support.v7.widget.AppCompatTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="(12.9km)"
+                   android:textSize="14sp"
+                   android:textColor="@color/colorPrimary"
+                   android:layout_toRightOf="@+id/kmcost"/>
+               <android.support.v7.widget.AppCompatTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="12.5元"
+                   android:layout_alignParentRight="true"
+                   android:textSize="14sp"
+                   android:textColor="@color/colorPrimary"/>
+               </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tmcost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时长费"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentLeft="true"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(10min)"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_toRightOf="@+id/tmcost"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12.5元"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/offsetcost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠券抵扣"
+            android:textSize="14sp"
+            android:textColor="@color/red"
+            android:layout_alignParentLeft="true"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-12.5元"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:textColor="@color/red"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/feed_backbg"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="计价规则"
+        android:textSize="16sp"
+        android:textColor="@color/gsjtsj_title_color"/>
+        </LinearLayout>
+</LinearLayout>

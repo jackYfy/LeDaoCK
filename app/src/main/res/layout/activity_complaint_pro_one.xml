@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context="com.zk.taxi.ui.SettingUI.ComplaintProOneActivity">
+
+    <include layout="@layout/tool_bar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/often">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/complaint_carnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="出租车"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/complaint_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@mipmap/timeimg"
+                android:drawablePadding="10dp"
+                android:text="2017-11-12 10:20"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/complaint_staddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@mipmap/st_img"
+                android:drawablePadding="10dp"
+                android:text="佛山市中山公园"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/complaint_edaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@mipmap/ed_img"
+                android:drawablePadding="10dp"
+                android:text="广州南站"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@mipmap/often"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="10dp">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/complaint_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已处理"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/complaint_type"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="相关结果以短信形式通知您，请留意查收！"
+            android:textSize="16sp"
+            android:textColor="@color/poi_button_text_color"/>
+
+    </LinearLayout>
+
+</LinearLayout>

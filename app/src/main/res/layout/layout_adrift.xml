@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lay_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_background_selected"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="2dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/near"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="附近有"
+                    android:textColor="@color/no1_orange"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/adrift_car_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/near"
+                    android:singleLine="true"
+                    android:text=" "
+                    android:textColor="@color/no1_orange"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+              <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/loading_bg"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+
+                    <TextView
+                        android:id="@+id/adrift_wait"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text=" 等待 "
+                        android:textSize="12sp"
+                        android:textColor="@color/loading_text"
+                        />
+
+
+                <TextView
+                    android:id="@+id/adrift_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/adrift_wait"
+                    android:text="00:00"
+                    android:textColor="@color/loading_text"
+                    android:maxWidth="180dp"
+                    android:minWidth="10dp"
+                    android:singleLine="true"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/triangle" />
+    </LinearLayout>
+
+    <ImageView
+    android:id="@+id/taxi_location_mark_iv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/loc2"
+    android:visibility="visible"/>
+
+</LinearLayout>

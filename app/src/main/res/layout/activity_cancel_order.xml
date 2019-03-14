@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context="com.zk.taxi.ui.CallCar.CancelOrderActivity">
+<include layout="@layout/tool_bar"/>
+
+<android.support.v7.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:layout_gravity="center_horizontal"
+    android:text="司机正在前往你的上车地点，"
+    android:textSize="20sp"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="建议您稍等。"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"/>
+
+<android.support.v7.widget.AppCompatImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@mipmap/cancel_is"/>
+
+<android.support.v7.widget.AppCompatButton
+    android:id="@+id/not_cancel"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/feed_backbg"
+    android:layout_marginLeft="60dp"
+    android:layout_marginRight="60dp"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/colorPrimary"
+    android:textSize="16sp"
+    android:text="暂不取消"/>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/yes_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/feed_roundbg"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/poi_button_text_color"
+        android:textSize="16sp"
+        android:text="确认取消"/>
+</LinearLayout>

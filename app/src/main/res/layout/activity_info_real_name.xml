@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    tools:context="com.zk.taxi.ui.InfoRealNameActivity">
+
+
+    <include layout="@layout/tool_bar"/>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/ababab"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@mipmap/cardid"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份认证"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仅支持中国居民身份证进行实名认证"
+            android:textSize="16sp"
+            android:textColor="@color/loading_bg"
+            />
+        </LinearLayout>
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="15dp"
+    android:background="@color/side_line"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="真实姓名"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/real_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feed_backbg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="填写身份证姓名"
+        android:textColorHint="@color/ababab"
+        android:textSize="16sp"
+        android:padding="10dp"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="身份证号"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/real_cardnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feed_backbg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="填写18位身份证号码"
+        android:textSize="16sp"
+        android:textColorHint="@color/ababab"
+        android:padding="10dp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/real_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="提交审核"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/gray"
+        android:layout_marginTop="40dp"/>
+</LinearLayout>
